@@ -1,0 +1,43 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model iphone {
+  id    Int    @id @default(autoincrement())
+  nama  String @db.VarChar(50)
+  seri  String @db.VarChar(50)
+  harga String @db.VarChar(100)
+}
+
+model oppo {
+  id    Int    @id @default(autoincrement())
+  nama  String @db.VarChar(50)
+  seri  String @db.VarChar(50)
+  harga String @db.VarChar(100)
+}
+
+model vivo {
+  id    Int    @id @default(autoincrement())
+  nama  String @db.VarChar(50)
+  seri  String @db.VarChar(50)
+  harga String @db.VarChar(100)
+}
+
+model xiomi {
+  id    Int    @id @default(autoincrement())
+  nama  String @db.VarChar(50)
+  seri  String @db.VarChar(50)
+  harga String @db.VarChar(100)
+}
+
+model poco {
+  id    Int    @id @default(autoincrement())
+  nama  String @db.VarChar(50)
+  seri  String @db.VarChar(50)
+  harga String @db.VarChar(100)
+}
